@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -244,7 +244,7 @@
 		DCC5EE20D758F157BDDA26D8 /* APDU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDU.swift; sourceTree = "<group>"; };
 		E0F4E7E137DDFBFFAC256203 /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
 		EA5F75E4937BE7C851716B76 /* CardReaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderType.swift; sourceTree = "<group>"; };
-		F1470286F2F829A80996DA51 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
+		F1470286F2F829A80996DA51 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.cfbundle; path = Resources.bundle; sourceTree = "<group>"; };
 		F919F9B4B67E5156A8CBDA88 /* CardChannelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardChannelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -668,10 +668,13 @@
 		E63EE4FCAFA7E1441FAB4786 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 590482669A669BCA25CDC07D /* Build configuration list for PBXProject "CardReaderProviderApi" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -992,6 +995,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -1007,6 +1011,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1028,10 +1033,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1161,6 +1168,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -1176,6 +1184,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1203,7 +1212,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1375,7 +1385,7 @@
 				F977A63D3EC4E05B70C69807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		30816157500345683DDBAD83 /* Build configuration list for PBXNativeTarget "CardReaderAccessTests_macOS" */ = {
 			isa = XCConfigurationList;
@@ -1384,7 +1394,7 @@
 				4A4C8BAA16D325B0EAF79015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		590482669A669BCA25CDC07D /* Build configuration list for PBXProject "CardReaderProviderApi" */ = {
 			isa = XCConfigurationList;
@@ -1402,7 +1412,7 @@
 				775BB16ECFDE696509B046CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		5C842EE7433565FD21CA085B /* Build configuration list for PBXNativeTarget "CardReaderAccess_macOS" */ = {
 			isa = XCConfigurationList;
@@ -1411,7 +1421,7 @@
 				CF392BF7E96CD766781A69F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		A7DD6DB14294A524BC383EDC /* Build configuration list for PBXNativeTarget "CardReaderProviderApi_macOS" */ = {
 			isa = XCConfigurationList;
@@ -1420,7 +1430,7 @@
 				75915C634DDE3C50804306B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		C0301962477A92CFD469AB16 /* Build configuration list for PBXNativeTarget "CardReaderProviderApi_iOS" */ = {
 			isa = XCConfigurationList;
@@ -1429,7 +1439,7 @@
 				4FF4C223BC7C7C42A5617087 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		DFCF493D8D077FAA17A44B93 /* Build configuration list for PBXNativeTarget "CardReaderAccessTests_iOS" */ = {
 			isa = XCConfigurationList;
@@ -1438,7 +1448,7 @@
 				3A7BECE389BB3F69EE119EE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 		FDAA23CF1C9D4C9C4320772D /* Build configuration list for PBXNativeTarget "CardReaderProviderApiTests_macOS" */ = {
 			isa = XCConfigurationList;
@@ -1447,7 +1457,7 @@
 				FA3C8E8BC5D0978E57454178 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "";
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
