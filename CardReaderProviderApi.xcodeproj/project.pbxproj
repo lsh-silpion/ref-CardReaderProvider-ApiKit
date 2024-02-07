@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00E6407610DEA72AAC91BBC3 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5FC30F6C0394A3FC054BA /* Nimble.xcframework */; };
 		0B494E7490DADC900A61FB54 /* CardReaderControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3B6828DD0828DB44E63E3B /* CardReaderControllerManager.swift */; };
 		10160B1F916E050FFAFAA964 /* ProviderDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4339EC85A3AFDAA46875002 /* ProviderDescriptor.swift */; };
 		11811A81943D7EE251C48E3A /* CardReaderControllerManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD0CA0E4EA25DB0940E189 /* CardReaderControllerManagerTest.swift */; };
@@ -16,78 +17,73 @@
 		1CFF465A78F34A73512AAD73 /* CardReaderControllerManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADD0CA0E4EA25DB0940E189 /* CardReaderControllerManagerTest.swift */; };
 		1E778271ED0EA9B45CF77E0C /* APDUCommandTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E0D29CD2A319E8628D0F6 /* APDUCommandTest.swift */; };
 		2131C859AAC39B7DB182DE4A /* CardReaderControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3B6828DD0828DB44E63E3B /* CardReaderControllerManager.swift */; };
-		21A94A470FAD5601B86043C8 /* GemCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA02D9875D15F87C785817A /* GemCommonsKit.framework */; };
 		2215C16495B3342EB577F6DB /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A9E424EF044219C314665 /* ResponseType.swift */; };
-		262914AF309C6A1C2CC6B372 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8828BB626C3D3521ECC8AB41 /* Nimble.framework */; };
-		27441A3EB996847935C22F8A /* GemCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF698FAB62F139FFB3BAFC /* GemCommonsKit.framework */; };
+		257BC02163392FFA1FA1B353 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5FC30F6C0394A3FC054BA /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		25E3388D2E5502E0FB7D9698 /* GemCommonsKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328C008D6A90186C53308F9F /* GemCommonsKit.xcframework */; };
 		31A631BA172BFB97C546B384 /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4E7E137DDFBFFAC256203 /* CardError.swift */; };
 		363DB8EFE8211DD096C522F1 /* CardReaderProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6D8A55D94515A84DA3E8C /* CardReaderProviderType.swift */; };
 		365BA4045DD86860C804B71B /* CardReaderProviderApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0809C6DF8A86E19D37D86703 /* CardReaderProviderApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37F159BCDC102AF85CF783CC /* GemCommonsKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328C008D6A90186C53308F9F /* GemCommonsKit.xcframework */; };
 		3AC012759D51EDA3E62B9BCF /* SwiftExtReflectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DC8AA4D2FD4D87C99959D /* SwiftExtReflectionTest.swift */; };
 		3F547316C030FD96E96325B1 /* APDUResponseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A237EA7A9A78A6A17029D1B /* APDUResponseTest.swift */; };
 		45AFABAA59F672AE5CB02863 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A9E424EF044219C314665 /* ResponseType.swift */; };
 		48946F879D447CE1A258503A /* CardReaderAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CAA3B3E320F7E49D302396 /* CardReaderAccess.framework */; };
-		4D9CFD2D9E976EDB1A808B93 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18E7081A54895D2CFCE2A46 /* Nimble.framework */; };
 		4E3B217A4872AC3379B7D27E /* CommandType+APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB91D6311EC8E43B87B7416 /* CommandType+APDU.swift */; };
 		4F7BCE751CA6F63367C260CA /* CardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8BA4706DFF46FD56CF92E /* CardProtocol.swift */; };
 		4FCB65D2419130E31FBBA84C /* CommandType+APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB91D6311EC8E43B87B7416 /* CommandType+APDU.swift */; };
 		5301055E325E6185E524CAB2 /* CardReaderControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5480EA10FD0ABA9F685EA15B /* CardReaderControllerType.swift */; };
-		5415CCAC7A3CD068C3BFE253 /* GemCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF698FAB62F139FFB3BAFC /* GemCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55785FAB3696E24C6BDA95C3 /* APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5EE20D758F157BDDA26D8 /* APDU.swift */; };
 		5935DFC2F4E3226553A208F3 /* CardReaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBEEA608801CCA8C273E01 /* CardReaderTest.swift */; };
 		62B2C2D0EC499F82A1CA1927 /* ProviderDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4339EC85A3AFDAA46875002 /* ProviderDescriptor.swift */; };
 		63643CB4634185F40CAB0842 /* CardReaderAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92CAA3B3E320F7E49D302396 /* CardReaderAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63BBA18CBF9036F183C86F68 /* SwiftExtReflectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DC8AA4D2FD4D87C99959D /* SwiftExtReflectionTest.swift */; };
 		63CB2DC7873CC2786B90338A /* ResponseType+APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA7B172F53F78A4D879B4B9 /* ResponseType+APDU.swift */; };
+		67654A6A84BBD833FA35956E /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5FC30F6C0394A3FC054BA /* Nimble.xcframework */; };
 		68F7628556A7986938D1F0D6 /* CardChannelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F919F9B4B67E5156A8CBDA88 /* CardChannelType.swift */; };
 		693CB92C179407A5ED8CA733 /* CommandType+LogicChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34004B98454EF3210672BA65 /* CommandType+LogicChannel.swift */; };
 		6ECB201EC50F7D5BB142E9D4 /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10572F5711EC4B7B2CBBECD8 /* CommandType.swift */; };
 		70ED9C3365FDA9009FD6F806 /* CardReaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDBEEA608801CCA8C273E01 /* CardReaderTest.swift */; };
+		719B1B85090D9F4E944BDC5F /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5FC30F6C0394A3FC054BA /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7389185F0FECECF294D25540 /* CommandTypeExtLogicChannelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A98787EBCC5E9EC4B54163 /* CommandTypeExtLogicChannelTests.swift */; };
 		7511612604537FA6BE12C996 /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0809C6DF8A86E19D37D86703 /* CardReaderProviderApi.framework */; };
-		7C77D6CA9FF0F4603ED2800A /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B18E7081A54895D2CFCE2A46 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		81199D61B167903D9F37179A /* Swift+Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C137F213B22BB7D80DA52349 /* Swift+Reflection.swift */; };
 		822935598E3DD1259AAF837A /* CardReaderProviderApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA130FD7E21219812043D3DD /* CardReaderProviderApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		82DC70304FF1DDA59FD36A05 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5FC30F6C0394A3FC054BA /* Nimble.xcframework */; };
+		841AD2793721BF75DBECBE06 /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5FC30F6C0394A3FC054BA /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		843B3AC6B311891A2E63BA1E /* CardReaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F75E4937BE7C851716B76 /* CardReaderType.swift */; };
-		8570B84A3ED35F5A3BDF176B /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8828BB626C3D3521ECC8AB41 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85D9E0FE213BAD4362D38FB0 /* CommandTypeExtLogicChannelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A98787EBCC5E9EC4B54163 /* CommandTypeExtLogicChannelTests.swift */; };
 		8746EF11BB07E475AA8A74B2 /* APDUResponseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A237EA7A9A78A6A17029D1B /* APDUResponseTest.swift */; };
 		8CC8CC3325161DDE8A61AF64 /* CardReaderControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5480EA10FD0ABA9F685EA15B /* CardReaderControllerType.swift */; };
 		8E3DAB680C27E66EB24B449F /* CardReaderAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 20C99D970517EC0D66E0B122 /* CardReaderAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FB469D92799CC66D133E912 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29806EA9F2D2C7343106F117 /* CardType.swift */; };
 		9947A26C69277CD8E7077EC7 /* CardReaderProviderApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0809C6DF8A86E19D37D86703 /* CardReaderProviderApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CB991906C709D04CBCCA13F /* GemCommonsKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328C008D6A90186C53308F9F /* GemCommonsKit.xcframework */; };
 		9EA7930BA863C3C32F16DF48 /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA130FD7E21219812043D3DD /* CardReaderProviderApi.framework */; };
 		A1629DBA1AF1CACE37B86182 /* ProviderDescriptorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF28C1072D851FB67162822 /* ProviderDescriptorType.swift */; };
-		A476DE81101D128FBCD61177 /* GemCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA02D9875D15F87C785817A /* GemCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A266236B38BB2321F154D764 /* Nimble.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5FC30F6C0394A3FC054BA /* Nimble.xcframework */; };
 		A67910F589D2732398F03353 /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0809C6DF8A86E19D37D86703 /* CardReaderProviderApi.framework */; };
 		ADD6AD3B0BEB9FC8B2E5A6BB /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5011B2B294DA7BCB60AED24 /* XCTestManifests.swift */; };
-		B2365F6EE20E8FA771A0F617 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B18E7081A54895D2CFCE2A46 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B30E43F58FB21FD59DC6F528 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8828BB626C3D3521ECC8AB41 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B8BA082CA0D6A3B086CEC47A /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4E7E137DDFBFFAC256203 /* CardError.swift */; };
 		C0E72DF00EAA5EBA66D7687D /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA130FD7E21219812043D3DD /* CardReaderProviderApi.framework */; };
 		C26EE86DFE1E9379B87827FF /* ProviderDescriptorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF28C1072D851FB67162822 /* ProviderDescriptorType.swift */; };
+		C43333D925B57916D4CE7713 /* GemCommonsKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328C008D6A90186C53308F9F /* GemCommonsKit.xcframework */; };
 		C62CD5E6ABC065009DDC6C2A /* Swift+Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C137F213B22BB7D80DA52349 /* Swift+Reflection.swift */; };
-		CC8F285AD9CD0703E0D19229 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18E7081A54895D2CFCE2A46 /* Nimble.framework */; };
 		CDD14B808DFEB79E04018A11 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1470286F2F829A80996DA51 /* Resources.bundle */; };
 		CEDA8F274F63FDB3E313C75E /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA130FD7E21219812043D3DD /* CardReaderProviderApi.framework */; };
 		D151A680E9328EC8C226E2A5 /* CommandType+LogicChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34004B98454EF3210672BA65 /* CommandType+LogicChannel.swift */; };
 		D175323A8664ED6E162006B3 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29806EA9F2D2C7343106F117 /* CardType.swift */; };
-		D5AF8BE16E6F25D0DFB4243D /* GemCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF698FAB62F139FFB3BAFC /* GemCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D61E4A710A2C588227B87894 /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10572F5711EC4B7B2CBBECD8 /* CommandType.swift */; };
 		E0060962665C2E9ABF386CEE /* CardReaderProviderApi.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA130FD7E21219812043D3DD /* CardReaderProviderApi.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E0D35EE2F490B47C6D4604DE /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4BFAF4E614F346E63D4547 /* XCTestManifests.swift */; };
-		E29DF9E92DF632F30B49FDC5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8828BB626C3D3521ECC8AB41 /* Nimble.framework */; };
 		E3915564CBE4E9053FEEBC2A /* CardReaderProviderApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0809C6DF8A86E19D37D86703 /* CardReaderProviderApi.framework */; };
 		E53626012B9A82DD6663635B /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5011B2B294DA7BCB60AED24 /* XCTestManifests.swift */; };
-		E9CFF9DC4D5D61502AE55094 /* GemCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CF698FAB62F139FFB3BAFC /* GemCommonsKit.framework */; };
 		E9E89D1D033F6F06C0E0EF35 /* CardReaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F75E4937BE7C851716B76 /* CardReaderType.swift */; };
 		E9F2863F578A06836453A682 /* APDUCommandTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E0D29CD2A319E8628D0F6 /* APDUCommandTest.swift */; };
 		F368A171F6E082BB4A2FB50C /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4BFAF4E614F346E63D4547 /* XCTestManifests.swift */; };
 		F5698EAB117552C4638F5D52 /* CardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8BA4706DFF46FD56CF92E /* CardProtocol.swift */; };
-		F846D2EEC76EFE23B59893F3 /* GemCommonsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA02D9875D15F87C785817A /* GemCommonsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F8896347C2DED638B0AD6A6B /* CardReaderAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C99D970517EC0D66E0B122 /* CardReaderAccess.framework */; };
 		F98C1158802F8D723E617047 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1470286F2F829A80996DA51 /* Resources.bundle */; };
-		FAFA553361CE7B70245776AB /* GemCommonsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA02D9875D15F87C785817A /* GemCommonsKit.framework */; };
+		FB225174C7B31F87DECCDBAC /* Nimble.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08A5FC30F6C0394A3FC054BA /* Nimble.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FCFF53CBEEA598574834F411 /* CardReaderProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F6D8A55D94515A84DA3E8C /* CardReaderProviderType.swift */; };
 /* End PBXBuildFile section */
 
@@ -159,8 +155,7 @@
 			files = (
 				63643CB4634185F40CAB0842 /* CardReaderAccess.framework in Embed Frameworks */,
 				822935598E3DD1259AAF837A /* CardReaderProviderApi.framework in Embed Frameworks */,
-				F846D2EEC76EFE23B59893F3 /* GemCommonsKit.framework in Embed Frameworks */,
-				B2365F6EE20E8FA771A0F617 /* Nimble.framework in Embed Frameworks */,
+				FB225174C7B31F87DECCDBAC /* Nimble.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,8 +168,7 @@
 			files = (
 				8E3DAB680C27E66EB24B449F /* CardReaderAccess.framework in Embed Frameworks */,
 				365BA4045DD86860C804B71B /* CardReaderProviderApi.framework in Embed Frameworks */,
-				5415CCAC7A3CD068C3BFE253 /* GemCommonsKit.framework in Embed Frameworks */,
-				8570B84A3ED35F5A3BDF176B /* Nimble.framework in Embed Frameworks */,
+				719B1B85090D9F4E944BDC5F /* Nimble.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,8 +180,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E0060962665C2E9ABF386CEE /* CardReaderProviderApi.framework in Embed Frameworks */,
-				A476DE81101D128FBCD61177 /* GemCommonsKit.framework in Embed Frameworks */,
-				7C77D6CA9FF0F4603ED2800A /* Nimble.framework in Embed Frameworks */,
+				841AD2793721BF75DBECBE06 /* Nimble.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,8 +192,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9947A26C69277CD8E7077EC7 /* CardReaderProviderApi.framework in Embed Frameworks */,
-				D5AF8BE16E6F25D0DFB4243D /* GemCommonsKit.framework in Embed Frameworks */,
-				B30E43F58FB21FD59DC6F528 /* Nimble.framework in Embed Frameworks */,
+				257BC02163392FFA1FA1B353 /* Nimble.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +202,7 @@
 /* Begin PBXFileReference section */
 		05F6D8A55D94515A84DA3E8C /* CardReaderProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderProviderType.swift; sourceTree = "<group>"; };
 		0809C6DF8A86E19D37D86703 /* CardReaderProviderApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardReaderProviderApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A5FC30F6C0394A3FC054BA /* Nimble.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nimble.xcframework; path = Carthage/Build/Nimble.xcframework; sourceTree = "<group>"; };
 		10572F5711EC4B7B2CBBECD8 /* CommandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandType.swift; sourceTree = "<group>"; };
 		135A9E424EF044219C314665 /* ResponseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
 		185E0D29CD2A319E8628D0F6 /* APDUCommandTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDUCommandTest.swift; sourceTree = "<group>"; };
@@ -217,6 +210,7 @@
 		20C99D970517EC0D66E0B122 /* CardReaderAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardReaderAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29806EA9F2D2C7343106F117 /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
 		2BF28C1072D851FB67162822 /* ProviderDescriptorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDescriptorType.swift; sourceTree = "<group>"; };
+		328C008D6A90186C53308F9F /* GemCommonsKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GemCommonsKit.xcframework; path = Carthage/Build/GemCommonsKit.xcframework; sourceTree = "<group>"; };
 		34004B98454EF3210672BA65 /* CommandType+LogicChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommandType+LogicChannel.swift"; sourceTree = "<group>"; };
 		45A98787EBCC5E9EC4B54163 /* CommandTypeExtLogicChannelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTypeExtLogicChannelTests.swift; sourceTree = "<group>"; };
 		4CA7B172F53F78A4D879B4B9 /* ResponseType+APDU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResponseType+APDU.swift"; sourceTree = "<group>"; };
@@ -225,18 +219,14 @@
 		5A4BFAF4E614F346E63D4547 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		5B8DC8AA4D2FD4D87C99959D /* SwiftExtReflectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtReflectionTest.swift; sourceTree = "<group>"; };
 		5BB91D6311EC8E43B87B7416 /* CommandType+APDU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommandType+APDU.swift"; sourceTree = "<group>"; };
-		62CF698FAB62F139FFB3BAFC /* GemCommonsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GemCommonsKit.framework; sourceTree = "<group>"; };
 		7DC8BC2602FEC7ACDB001490 /* CardReaderProviderApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardReaderProviderApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E8BA4706DFF46FD56CF92E /* CardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProtocol.swift; sourceTree = "<group>"; };
-		8828BB626C3D3521ECC8AB41 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
 		92CAA3B3E320F7E49D302396 /* CardReaderAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardReaderAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A237EA7A9A78A6A17029D1B /* APDUResponseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDUResponseTest.swift; sourceTree = "<group>"; };
-		9EA02D9875D15F87C785817A /* GemCommonsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GemCommonsKit.framework; sourceTree = "<group>"; };
 		A4339EC85A3AFDAA46875002 /* ProviderDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDescriptor.swift; sourceTree = "<group>"; };
 		AA130FD7E21219812043D3DD /* CardReaderProviderApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardReaderProviderApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9D8E97ED50240015DA9F89 /* CardReaderAccessTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CardReaderAccessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3B6828DD0828DB44E63E3B /* CardReaderControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderControllerManager.swift; sourceTree = "<group>"; };
-		B18E7081A54895D2CFCE2A46 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
 		C047FE6449C7964CF0BBF2D7 /* CardReaderProviderApiTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CardReaderProviderApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C137F213B22BB7D80DA52349 /* Swift+Reflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Reflection.swift"; sourceTree = "<group>"; };
 		C5011B2B294DA7BCB60AED24 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
@@ -253,7 +243,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFA553361CE7B70245776AB /* GemCommonsKit.framework in Frameworks */,
+				9CB991906C709D04CBCCA13F /* GemCommonsKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +251,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9CFF9DC4D5D61502AE55094 /* GemCommonsKit.framework in Frameworks */,
+				C43333D925B57916D4CE7713 /* GemCommonsKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +261,7 @@
 			files = (
 				48946F879D447CE1A258503A /* CardReaderAccess.framework in Frameworks */,
 				C0E72DF00EAA5EBA66D7687D /* CardReaderProviderApi.framework in Frameworks */,
-				4D9CFD2D9E976EDB1A808B93 /* Nimble.framework in Frameworks */,
+				00E6407610DEA72AAC91BBC3 /* Nimble.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67910F589D2732398F03353 /* CardReaderProviderApi.framework in Frameworks */,
-				27441A3EB996847935C22F8A /* GemCommonsKit.framework in Frameworks */,
+				37F159BCDC102AF85CF783CC /* GemCommonsKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA7930BA863C3C32F16DF48 /* CardReaderProviderApi.framework in Frameworks */,
-				CC8F285AD9CD0703E0D19229 /* Nimble.framework in Frameworks */,
+				82DC70304FF1DDA59FD36A05 /* Nimble.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDA8F274F63FDB3E313C75E /* CardReaderProviderApi.framework in Frameworks */,
-				21A94A470FAD5601B86043C8 /* GemCommonsKit.framework in Frameworks */,
+				25E3388D2E5502E0FB7D9698 /* GemCommonsKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +298,7 @@
 			files = (
 				F8896347C2DED638B0AD6A6B /* CardReaderAccess.framework in Frameworks */,
 				E3915564CBE4E9053FEEBC2A /* CardReaderProviderApi.framework in Frameworks */,
-				262914AF309C6A1C2CC6B372 /* Nimble.framework in Frameworks */,
+				A266236B38BB2321F154D764 /* Nimble.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7511612604537FA6BE12C996 /* CardReaderProviderApi.framework in Frameworks */,
-				E29DF9E92DF632F30B49FDC5 /* Nimble.framework in Frameworks */,
+				67654A6A84BBD833FA35956E /* Nimble.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,16 +323,6 @@
 			path = Reader;
 			sourceTree = "<group>";
 		};
-		2E35E451EE0E4168A79842A0 /* Carthage */ = {
-			isa = PBXGroup;
-			children = (
-				46C673556C1D2ED143E6A63D /* iOS */,
-				90C1EEC5DB851A72E0582E2F /* Mac */,
-			);
-			name = Carthage;
-			path = Carthage/Build;
-			sourceTree = "<group>";
-		};
 		345E589FEF8A85680F28903E /* Card */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,15 +332,6 @@
 				29806EA9F2D2C7343106F117 /* CardType.swift */,
 			);
 			path = Card;
-			sourceTree = "<group>";
-		};
-		46C673556C1D2ED143E6A63D /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9EA02D9875D15F87C785817A /* GemCommonsKit.framework */,
-				B18E7081A54895D2CFCE2A46 /* Nimble.framework */,
-			);
-			path = iOS;
 			sourceTree = "<group>";
 		};
 		49886305BFB147353A8A2948 /* CardReaderProviderApiTests */ = {
@@ -423,7 +394,8 @@
 		818AE8C7E3824B62CB201DEE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2E35E451EE0E4168A79842A0 /* Carthage */,
+				328C008D6A90186C53308F9F /* GemCommonsKit.xcframework */,
+				08A5FC30F6C0394A3FC054BA /* Nimble.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -447,15 +419,6 @@
 			);
 			name = CardReaderProviderApi;
 			path = Sources/CardReaderProviderApi;
-			sourceTree = "<group>";
-		};
-		90C1EEC5DB851A72E0582E2F /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				62CF698FAB62F139FFB3BAFC /* GemCommonsKit.framework */,
-				8828BB626C3D3521ECC8AB41 /* Nimble.framework */,
-			);
-			path = Mac;
 			sourceTree = "<group>";
 		};
 		B6A183B3D178CDD18E8B650C /* CardReaderAccess */ = {
@@ -670,6 +633,32 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					05D370309DB948299126566C = {
+						DevelopmentTeam = 67X5G8WXSG;
+					};
+					2E8BDF928C860275B97B40DE = {
+						DevelopmentTeam = 67X5G8WXSG;
+					};
+					4E4C855370629E8BDEA07A70 = {
+						DevelopmentTeam = 67X5G8WXSG;
+					};
+					8629E5156A99460CD40ADC24 = {
+						DevelopmentTeam = 67X5G8WXSG;
+					};
+					965FDB85EDB207DFCC3FB2FD = {
+						DevelopmentTeam = 67X5G8WXSG;
+					};
+					9AE3E75E73F8104274587B8D = {
+						DevelopmentTeam = 67X5G8WXSG;
+					};
+					9B5B2C9EC9D971A2DE20C829 = {
+						DevelopmentTeam = 67X5G8WXSG;
+					};
+					EE61829092C86540D7A1AB31 = {
+						DevelopmentTeam = 67X5G8WXSG;
+					};
+				};
 			};
 			buildConfigurationList = 590482669A669BCA25CDC07D /* Build configuration list for PBXProject "CardReaderProviderApi" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -879,7 +868,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"Carthage/Build\"",
 				);
 				INFOPLIST_FILE = Resources/CardReaderProviderApi_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -887,7 +876,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderProviderApi-macOS";
 				PRODUCT_NAME = CardReaderProviderApi;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -901,14 +890,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"\"Carthage/Build\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccessTests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderAccessTests-iOS";
 				PRODUCT_NAME = CardReaderAccessTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -921,14 +910,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"\"Carthage/Build\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccessTests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderAccessTests-iOS";
 				PRODUCT_NAME = CardReaderAccessTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -942,14 +931,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"Carthage/Build\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccessTests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderAccessTests-macOS";
 				PRODUCT_NAME = CardReaderAccessTests;
 				SDKROOT = macosx;
 			};
@@ -966,7 +955,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"\"Carthage/Build\"",
 				);
 				INFOPLIST_FILE = Resources/CardReaderProviderApi_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -974,7 +963,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderProviderApi-iOS";
 				PRODUCT_NAME = CardReaderProviderApi;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1018,6 +1007,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 67X5G8WXSG;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1029,8 +1019,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1046,14 +1037,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"\"Carthage/Build\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApiTests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderProviderApiTests-iOS";
 				PRODUCT_NAME = CardReaderProviderApiTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1072,7 +1063,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"Carthage/Build\"",
 				);
 				INFOPLIST_FILE = Resources/CardReaderProviderApi_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1080,7 +1071,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderProviderApi-macOS";
 				PRODUCT_NAME = CardReaderProviderApi;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1094,14 +1085,14 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"\"Carthage/Build\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApiTests-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderProviderApiTests-iOS";
 				PRODUCT_NAME = CardReaderProviderApiTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1115,14 +1106,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"Carthage/Build\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApiTests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderProviderApiTests-macOS";
 				PRODUCT_NAME = CardReaderProviderApiTests;
 				SDKROOT = macosx;
 			};
@@ -1140,7 +1131,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"Carthage/Build\"",
 				);
 				INFOPLIST_FILE = Resources/CardReaderAccess_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1148,7 +1139,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderAccess-macOS";
 				PRODUCT_NAME = CardReaderAccess;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1191,6 +1182,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 67X5G8WXSG;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -1208,8 +1200,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1228,14 +1221,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"Carthage/Build\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccessTests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderAccessTests-macOS";
 				PRODUCT_NAME = CardReaderAccessTests;
 				SDKROOT = macosx;
 			};
@@ -1252,7 +1245,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"\"Carthage/Build\"",
 				);
 				INFOPLIST_FILE = Resources/CardReaderAccess_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1260,7 +1253,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderAccess-iOS";
 				PRODUCT_NAME = CardReaderAccess;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1281,7 +1274,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"Carthage/Build\"",
 				);
 				INFOPLIST_FILE = Resources/CardReaderAccess_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1289,7 +1282,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderAccess-macOS";
 				PRODUCT_NAME = CardReaderAccess;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -1308,7 +1301,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"\"Carthage/Build\"",
 				);
 				INFOPLIST_FILE = Resources/CardReaderProviderApi_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1316,7 +1309,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApi-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderProviderApi-iOS";
 				PRODUCT_NAME = CardReaderProviderApi;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1336,7 +1329,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"\"Carthage/Build\"",
 				);
 				INFOPLIST_FILE = Resources/CardReaderAccess_Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1344,7 +1337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderAccess-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderAccess-iOS";
 				PRODUCT_NAME = CardReaderAccess;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1360,14 +1353,14 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"\"Carthage/Build\"",
 				);
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "de.gematik.ti.cardreader.provider.CardReaderProviderApiTests-macOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.silpion.ti.cardreader.provider.CardReaderProviderApiTests-macOS";
 				PRODUCT_NAME = CardReaderProviderApiTests;
 				SDKROOT = macosx;
 			};

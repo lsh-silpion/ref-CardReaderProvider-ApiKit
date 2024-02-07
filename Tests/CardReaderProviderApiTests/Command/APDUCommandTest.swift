@@ -313,26 +313,30 @@ final class APDUCommandTest: XCTestCase {
         let data = Data([0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0, 0xa0])
 
         // test with ne = static wildcard variables short
+        let expectedResult_1: Data = [0x1, 0x2, 0x3, 0x4] + [0xa] + data + [0x0]
         expect {
             try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: APDU.expectedLengthWildcardShort)
                     .bytes
-        } == [0x1, 0x2, 0x3, 0x4] + [0xa] + data + [0x0]
+        } == expectedResult_1
 
         // test with ne = extended wildcard
+        let expectedResult_2: Data = [0x1, 0x2, 0x3, 0x4] + [0x0, 0x0, 0xa] + data + [0x0, 0x0]
         expect {
             try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: APDU.expectedLengthWildcardExtended)
                     .bytes
-        } == [0x1, 0x2, 0x3, 0x4] + [0x0, 0x0, 0xa] + data + [0x0, 0x0]
+        } == expectedResult_2
 
         // test with ne = 0 (wildcard short)
+        let expectedResult_3: Data = [0x1, 0x2, 0x3, 0x4] + [0xa] + data + [0x0]
         expect {
             try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data, ne: 0).bytes
-        } == [0x1, 0x2, 0x3, 0x4] + [0xa] + data + [0x0]
+        } == expectedResult_3
 
         // ne = nil
+        let expectedResult_4: Data = [0x1, 0x2, 0x3, 0x4] + [0xa] + data
         expect {
             try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: data).bytes
-        } == [0x1, 0x2, 0x3, 0x4] + [0xa] + data
+        } == expectedResult_4
     }
 
     func testCommandAPDU_expectedLengthWildcardEncoding_extended() {
@@ -341,24 +345,28 @@ final class APDUCommandTest: XCTestCase {
         let lc1 = UInt8(size >> 8)
         let lc2 = UInt8(size & 0xff)
         // ne = 0 - wildcard extended
+        let expectedResult_1: Data = [0x1, 0x2, 0x3, 0x4, 0x00, lc1, lc2] + dataLong + [0x0, 0x0]
         expect {
             try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: dataLong, ne: 0).bytes
-        } == [0x1, 0x2, 0x3, 0x4, 0x00, lc1, lc2] + dataLong + [0x0, 0x0]
+        } == expectedResult_1
 
         // ne = nil
+        let expectedResult_2: Data = [0x1, 0x2, 0x3, 0x4, 0x00, lc1, lc2] + dataLong
         expect {
             try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: dataLong).bytes
-        } == [0x1, 0x2, 0x3, 0x4, 0x00, lc1, lc2] + dataLong
+        } == expectedResult_2
 
         // ne = 0 -> wildcard short
+        let expectedResult_3: Data = Data([0x1, 0x2, 0x3, 0x4, 0x0])
         expect {
             try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: nil, ne: 0).bytes
-        } == Data([0x1, 0x2, 0x3, 0x4, 0x0])
+        } == expectedResult_3
 
         // ne = nil
+        let expectedResult_4: Data = Data([0x1, 0x2, 0x3, 0x4])
         expect {
             try APDU.Command(cla: 0x1, ins: 0x2, p1: 0x3, p2: 0x4, data: nil).bytes
-        } == Data([0x1, 0x2, 0x3, 0x4])
+        } == expectedResult_4
     }
 
     func testCommandAPDU_ErrorExpectedLengthOutOfBounds() {

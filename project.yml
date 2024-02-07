@@ -1,11 +1,13 @@
 name: CardReaderProviderApi
 options:
-  bundleIdPrefix: de.gematik.ti.cardreader.provider
+  bundleIdPrefix: de.silpion.ti.cardreader.provider
   deploymentTarget:
-    macOS: 10.12
-    iOS: 12.1
+    macOS: 10.15
+    iOS: 17.2
 settings:
   base:
+    GENERATE_INFOPLIST_FILE: YES
+    DEVELOPMENT_TEAM: 67X5G8WXSG
     SWIFT_VERSION: 5.0
     ALWAYS_SEARCH_USER_PATHS: NO
     FRAMEWORK_SEARCH_PATHS: "$(inherited)"
@@ -23,7 +25,7 @@ targets:
     info:
       path: Resources/CardReaderProviderApi_Info.plist
     dependencies:
-      - carthage: GemCommonsKit
+      - framework: "Carthage/Build/GemCommonsKit.xcframework"
     scheme:
       testTargets:
         - CardReaderProviderApiTests_${platform}
@@ -37,7 +39,7 @@ targets:
       path: Resources/CardReaderAccess_Info.plist
     dependencies:
       - target: CardReaderProviderApi_${platform}
-      - carthage: GemCommonsKit
+      - framework: "Carthage/Build/GemCommonsKit.xcframework"
     scheme:
       testTargets:
         - CardReaderAccessTests_${platform}
@@ -49,7 +51,7 @@ targets:
       - Tests/CardReaderProviderApiTests
     dependencies:
       - target: CardReaderProviderApi_${platform}
-      - carthage: Nimble
+      - framework: "Carthage/Build/Nimble.xcframework"
   CardReaderAccessTests:
     type: bundle.unit-test
     platform: [macOS,iOS]
@@ -58,5 +60,5 @@ targets:
     dependencies:
       - target: CardReaderAccess_${platform}
       - target: CardReaderProviderApi_${platform}
-      - carthage: Nimble
+      - framework: "Carthage/Build/Nimble.xcframework"
 buildImplicitDependencies: true
